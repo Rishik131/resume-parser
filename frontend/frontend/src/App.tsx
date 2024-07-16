@@ -7,7 +7,11 @@ function App() {
   return (
     <>
       <div className='pageContainer'>
-        div here
+        <div className='pageContainerChild'>
+          <div className="fileContainer">
+            dsfewf
+          </div>
+        </div>
       </div>
     </>
   )
