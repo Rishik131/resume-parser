@@ -36,6 +36,8 @@
 
 .fileContainer{
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   display: flex;
   flex-direction: column;
@@ -46,8 +48,72 @@
 
   border: solid;
   border-radius: 10px;
-  background: rgba(48, 47, 47, 0.36);
+  /* background: rgba(48, 47, 47, 0.36);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+  background: rgba(50, 50, 50, 0.52);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+}
+
+.fileContainerChild1{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  font-size: 20px;
+}
+
+.fileContainerChild2{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+
+  border-style:dashed;
+  border-radius: 3px;
+  border-width: 2px;
+
+  width: 50%;
+  margin-top: 20px;
+}
+
+.uploadContainer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.uploadContainerChild1, .uploadContainerChild2{
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.uploadContainerChild2{
+  font-size: 12px;
+}
+
+.uploadIcon{
+  width: 70px;
+  height: auto;
+  color: white;
+  background: transparent;
+}
+
+.uploadIcon:hover{
+  cursor: pointer;
 }
